@@ -18,7 +18,7 @@ const Donate = () => {
 
   async function handleToken(token, addresses) {
     const response = await axios.post(
-      "/checkout",
+      "https://gamingneeds-nodeexpress.herokuapp.com/checkout",
       { token, product }
     );
     const { status } = response.data;
