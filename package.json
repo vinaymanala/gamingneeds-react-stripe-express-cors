@@ -1,0 +1,24 @@
+{
+  "name": "reactstripe",
+  "version": "1.0.0",
+  "description": "GamingNeeds Donation website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"nodemon server\" \"npm run client\"",
+    "start": "node server.js"
+  },
+  "author": "Vinay Manala",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^6.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "stripe": "^8.148.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
